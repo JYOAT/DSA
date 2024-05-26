@@ -1,4 +1,4 @@
-This repository contains:
+##This repository contains:
 
-DSA algorithms
-interveiw based questions
+-DSA algorithms
+-interveiw based questions
