@@ -14,7 +14,7 @@ vector<int> reverse (vector < int >v)
 	  e--;
 
 	}
-	return v;
+return v;
 }
 
 int
