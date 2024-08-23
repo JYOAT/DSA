@@ -20,3 +20,4 @@ int main()
 
     return 0;
 }
+//time complexity = O(log10(n))
