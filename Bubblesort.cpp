@@ -1,28 +1,31 @@
 #include <iostream>
 using namespace std;
-
-void bubbleSort(int A[], int size){
-    for (int i =1; i<size ; i++){
-        bool swapped = false;
-        for (int j = 0 ; j<size-i ; j++){
-            if (A[j]> A[j+1]){
-                swap(A[j],A[j+1]);
-                swapped=true;
+void bubbleSort(int arr[], int n){
+        for (int i = n-1; i>=0; i--){
+            int didswap = 0;
+            for (int j =0; j<=i-1;j++){
+                if (arr[j]>arr[j+1]){
+                    swap(arr[j],arr[j+1]);
+                    didswap=1;
+                }
             }
-        }
-        if (swapped==false)
-        break;
+            if(didswap ==0)  {
+                break;
+            } 
+           
     }
-}
+}    
 
 int main()
 {
-    int arr[10]={5,9,12,2,88};
+    int A[10]={4,11,3,9,8};
     int size = 5;
-    bubbleSort(arr,size);
+  bubbleSort(A,size);
     for (int i =0; i<size;i++){
-        cout<<arr[i]<<endl;
+        cout<<A[i]<<endl;
+        
     }
-
-    return 0;
 }
+
+//timecomplexity
+//O(n^2) = worst/avg and O(n) = best case
