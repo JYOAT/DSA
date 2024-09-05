@@ -17,3 +17,5 @@ vector<int> moveZeros(int n, vector<int> a) {
     }
     return a;
 }
+
+//tc- O(x)+O(n-x)=O(n)
