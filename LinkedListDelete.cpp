@@ -80,7 +80,7 @@ Node * deletek(Node* head, int k){
     while(temp){
         c++;
         if(c==k){
-            prev->next= prev->next->next;
+            prev->next= temp->next;
             free(temp);
             break;
         }
