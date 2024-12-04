@@ -4,14 +4,13 @@ Node* reverseDLL(Node* head)
     if(head==NULL || head->next==NULL){
         return head;
     }
-    Node* prev =NULL;
+    Node* back =NULL;
     Node* temp = head;
     while(temp!=NULL){
-        prev = temp->prev;
+        back = temp->prev;
         temp->prev = temp->next;
-        temp->next= prev;
+        temp->next= back;
         temp = temp->prev;
     }
-    return prev->prev;
+    return back->prev;
 }
-
